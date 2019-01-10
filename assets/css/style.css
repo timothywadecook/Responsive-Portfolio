@@ -109,9 +109,9 @@ h1 {
 .inputLine {
     width: 100%;
     box-sizing: border-box;
-    color: gray;
+    color: lightgray;
     padding: 5px;
-    /* border-radius: 3px; */
+    border-radius: 3px;
 
 }
 
@@ -122,22 +122,28 @@ h1 {
     box-sizing: border-box;
     padding: 5px;
     height: 10em;
-    /* border-radius: 3px; */
+    border-radius: 3px;
 
 }
+
 
 .submitBtn {
     font-size: 20px;
+    padding: 10px;
     background-color: #4aaaa5;
     color: white;
+    border-color: white;
 }
 .submitBtn:hover {
-    background-color: #666;
-    padding: 10px;
-    transition: padding 800ms ease-in-out;
+    /* background-color: white;
+    color: #4aaaa5;
+    border-color: #4aaaa5; */
+    border-radius: 10px;
 }
-
-
+.submitBtn:active {
+    background-color: #666;
+    color: white;
+}
 
 
 
@@ -145,21 +151,20 @@ h1 {
     we want the image inside to fit the full imageBtn div wxh and be square
     so the image will be expanded to fit the square, and centered and cropped */
 .imageBtn {
-    width: 250px;
-    height: 250px;
+    width: 278px;
+    height: 278px;
     margin: 10px;
     display: block;
     position: relative;
     float: left;
     overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
 
-}
 .imageBtn:hover {
-    border-radius: 30px;
+    border-radius: 139px;
 }
-.imageBtn:active {
-    border-radius: 80px;
-}
+
 
 
 
@@ -174,10 +179,11 @@ h1 {
 }
 
 
+
 /* Style and position the text box that will sit on the parent imageBtn - goal is to sit it near the bottom */
 .textOverlay {
     width: 100%;
-    height: 15%;
+    line-height: 3em;
     position: absolute;
     bottom: 0;
     background-color: #4aaaa5;
