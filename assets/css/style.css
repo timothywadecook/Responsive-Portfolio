@@ -31,8 +31,23 @@ header {
     color: #777777;
     line-height: 50px;
     float:  right;
-    margin-left: 20px;
+    width: 100px;
+    text-align: center;
 }
+
+.menu:hover {
+    background-color: #4aaaa5;
+    color: white;
+    opacity: 0.8;
+}
+.menu:active {
+    background-color: #666;
+    color: white;
+    opacity: 1;
+}
+
+
+
 
 /*  set the background image  */
 body {
@@ -66,11 +81,12 @@ h1 {
     width: 960px;
     margin: 50px auto;
     line-height: 2em;
+    overflow: auto;
 }
 
 .footer {
-    position: fixed;
-    bottom: .0;
+    position: absolute;
+    top: 900px;
     width: 100%;
     color: white;
     background-color: #666666;
@@ -115,7 +131,11 @@ h1 {
     background-color: #4aaaa5;
     color: white;
 }
-
+.submitBtn:hover {
+    background-color: #666;
+    padding: 10px;
+    transition: padding 800ms ease-in-out;
+}
 
 
 
@@ -130,10 +150,18 @@ h1 {
     margin: 10px;
     display: block;
     position: relative;
-    /* float: left; */
+    float: left;
     overflow: hidden;
 
 }
+.imageBtn:hover {
+    border-radius: 30px;
+}
+.imageBtn:active {
+    border-radius: 80px;
+}
+
+
 
 /* Style the image links that go to portfolio pages */
 .imageLink {
