@@ -159,7 +159,6 @@ h1 {
 .imageLink {
     position: absolute; 
     height: 100%;
-    position: absolute;
     margin: auto;
 }
 
@@ -175,3 +174,62 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+
+
+/* Media Queries 
+    Let's make it responsive based on 3 break points 
+    with a mobile-first plan:
+    less than 320 = default 
+    min: 320 (small) 
+    min: 768 (med)
+    min: 1024 (lrg) */
+
+/* When the screen is smaller than 1000 px */
+@media screen and (max-width: 450px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        clear: both;
+    }
+    .hcontent {
+        width: 100%;
+        overflow: auto;
+    }
+    .myName {
+        width: 100%;
+        display: block;
+        clear: both;
+    }
+    .menu {
+        width: 33.33%;
+        /* float: none; */
+    }
+    p {
+        font-size: 12px;
+    }
+    .contentPic {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+    .imageBtn {
+        float: none;
+        width: 220px;
+        height: 220px;
+        margin: 20px auto;
+    }
+}
+
+/* Style changes for medium size screen / ipads */
+/* @media screen and (min-width: 768px) {
+
+
+} */
+/* Style changes for large screen / desktops */
+/* @media screen and (min-width: 1024px) {
+
+
+} */
+
+
