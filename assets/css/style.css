@@ -1,342 +1,326 @@
-/* Practice with Media Query to make website responsive */
 
+/* Practice with Media Query to make website responsive to
+    different viewport sizes and also I played with Keyframes 
+    to animate the radius of the main container on all pages. */
 
+/* Make the header background white and give it a light grey bottom border */
 header {
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    padding: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #cccccc;
+  padding: 0;
 }
-/* Lets set the width of the header content div to and center it */
+/* Lets set the width of the header content div to 960px and center it 
+    note this webiste was originally built for desktop (not mobile first) */
 .hcontent {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* TIMOTHY WADE COOK */
+/* Let's format my name "TIMOTHY WADE COOK" that will sit on the left side of the header */
 .myName {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: #4aaaa5;
-    color: white;
-    font-size: 22px;
-    padding: 13px;
-    margin: 0;
-    text-align: center;
-    width: 400px;
-    line-height: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: #4aaaa5;
+  color: white;
+  font-size: 22px;
+  padding: 13px;
+  margin: 0;
+  text-align: center;
+  width: 400px;
+  line-height: 50px;
 }
 
-/* ABOUT  PORTFOLIO  CONTACT */
+/* Format the menu consisting of "ABOUT  PORTFOLIO  CONTACT" */
 .menu {
-    text-decoration: none;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #777777;
-    line-height: 50px;
-    float:  right;
-    width: 100px;
-    text-align: center;
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #777777;
+  line-height: 50px;
+  float: right;
+  width: 100px;
+  text-align: center;
 }
 
+/*  On hover I want the whole square surrounding the text to change
+    to teal background and text to white */
 .menu:hover {
-    background-color: #4aaaa5;
-    color: white;
-    opacity: 0.8;
+  background-color: #4aaaa5;
+  color: white;
+  opacity: 0.8;
 }
 .menu:active {
-    background-color: #666;
-    color: white;
-    opacity: 1;
+  background-color: #666;
+  color: white;
+  opacity: 1;
 }
-
-
-
 
 /*  set the background image  */
 body {
-    background-image: url("https://www.backgroundsy.com/file/large/digital-waves-background.jpg");
+  background-image: url("https://www.backgroundsy.com/file/large/digital-waves-background.jpg");
 }
 
-/* Style the first text that serves as the title of the content container  */
+/* Style the h1 text that will serve as the title of the main content container  */
 h1 {
-    font-size: 24px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    padding: 10px 0 10px 0;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #4aaaa5;
+  padding: 10px 0 10px 0;
 }
 
 /* Style the About Me Picture - It should float left with a little padding */
 .contentPic {
-    float: left;
-    padding: 10px 10px 10px 0;
-    width: 200px;
+  float: left;
+  padding: 10px 10px 10px 0;
+  width: 200px;
 }
-
 
 /* Practice with animations */
 @keyframes wobwobwob {
-    from {border-radius: 0px;}
-    to {border-radius: 50px;}
+  from {
+    border-radius: 0px;
+  }
+  to {
+    border-radius: 50px;
+  }
 }
 
-/* General style for content containers on all pages  */
+/* General style for main content containers on all pages  */
 .container {
-    clear: both;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    color: #777777;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding: 30px;
-    box-sizing: border-box;
-    width: 960px;
-    margin: 50px auto;
-    line-height: 2em;
-    overflow: auto;
-    animation-name: wobwobwob; 
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+  clear: both;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  color: #777777;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 960px;
+  margin: 50px auto;
+  line-height: 2em;
+  overflow: auto;
+  animation-name: wobwobwob;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
-
-
+/*  Style the footer so it looks nice */
 .footer {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    width: 100%;
-    color: white;
-    background-color: #666666;
-    text-align: center;
-    border-top: 2px solid #4aaaa5;
-    line-height: 50px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: 100%;
+  color: white;
+  background-color: #666666;
+  text-align: center;
+  border-top: 2px solid #4aaaa5;
+  line-height: 50px;
 }
-
-
+/*  Style the input line boxes for the Contact Us forms */
 .inputLine {
-    width: 100%;
-    box-sizing: border-box;
-    color: lightgray;
-    padding: 5px;
-    border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  color: lightgray;
+  padding: 5px;
+  border-radius: 3px;
 }
-
-
+/*  Format text area for Contact Us form  */
 .inputPar {
-    color: gray;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px;
-    height: 10em;
-    border-radius: 3px;
+  color: gray;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 10em;
+  border-radius: 3px;
 }
-
-
+/*  Make the submit button match the rest of the page and change radius on hover */
 .submitBtn {
-    font-size: 20px;
-    padding: 10px;
-    background-color: #4aaaa5;
-    color: white;
-    border-color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4aaaa5;
+  color: white;
+  border-color: white;
 }
 .submitBtn:hover {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .submitBtn:active {
-    background-color: #666;
-    color: white;
+  background-color: #666;
+  color: white;
 }
 
-
-
 /* Set the general style for image links that will link to portfolio websites 
-    we want the image inside to fit the full imageBtn div wxh and be square
-    so the image will be expanded to fit the square, and centered and cropped */
+    note: the "-webkit-mask-image..." was necessary to solve SAFARI bug for 
+    bordser-radius change on hover */
 .imageBtn {
-    width: 278px;
-    height: 278px;
-    margin: 10px;
-    display: block;
-    position: relative;
-    float: left;
-    overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  width: 278px;
+  height: 278px;
+  margin: 10px;
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 /* when hovering over the portfolio item, change the radius to make it look like a circle */
 .imageBtn:hover {
-    border-radius: 139px;
+  border-radius: 139px;
 }
-
-
-
 
 /* Style the portfolio images so they fit in the parent <div>  */
 .imageLink {
-    position: absolute; 
-    height: 100%;
-    margin: auto;
+  position: absolute;
+  height: 100%;
+  margin: auto;
 }
 
 /* Style and position the text box that will sit on the parent imageBtn - goal is to sit it near the bottom */
 .textOverlay {
-    width: 100%;
-    line-height: 3em;
-    position: absolute;
-    bottom: 0;
-    background-color: #4aaaa5;
-    opacity: 0.8;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+  width: 100%;
+  line-height: 3em;
+  position: absolute;
+  bottom: 0;
+  background-color: #4aaaa5;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
-
 
 /* Sticky Footer  */
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 .wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
+  min-height: 100%;
+  margin-bottom: -50px;
 }
-.footer, .push {
-    height: 50px;
+.footer,
+.push {
+  height: 50px;
 }
-
-
-
-
 
 /* Media Queries 
-    Let's make it responsive based on 3 break points 
-    with a mobile-first plan:
-    less than 320 = default 
-    min: 320 (small) 
-    min: 768 (med)
-    min: 1024 (lrg) */
+    Let's make it responsive based on break points that I felt looked good 
+    for 290px or smaller width, we just fix the size of everything. */
 
 @media screen and (max-width: 290px) {
-    header {
-        width: 290px;
-    }
-    .footer {
-        width: 290px;
-    }
-    .container{
-        width: 260px;
-        margin: 15px 14.5px;
-        padding: 15px;
-        clear: both;
-    }
-    .hcontent {
-        width: 290px;
-        overflow: auto;
-    }
-    .myName {
-        width: 290px;
-        display: block;
-        clear: both;
-    }
-    .menu {
-        width: 96.66px;
-    }
-    p {
-        font-size: 12px;
-    }
-    .contentPic {
-        float: none;
-        margin: auto;
-        display: block;
-    }
-    .imageBtn {
-        float: none;
-        width: 220px;
-        height: 220px;
-        margin: 20px auto;
-    }
-
+  header {
+    width: 290px;
+  }
+  .footer {
+    width: 290px;
+  }
+  .container {
+    width: 260px;
+    margin: 15px 14.5px;
+    padding: 15px;
+    clear: both;
+  }
+  .hcontent {
+    width: 290px;
+    overflow: auto;
+  }
+  .myName {
+    width: 290px;
+    display: block;
+    clear: both;
+  }
+  .menu {
+    width: 96.66px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .contentPic {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+  .imageBtn {
+    float: none;
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+  }
 }
 
 /* When the screen is smaller than 1000 px */
 @media screen and (min-width: 290px) and (max-width: 450px) {
-    .container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-        clear: both;
-    }
-    .hcontent {
-        width: 100%;
-        overflow: auto;
-    }
-    .myName {
-        width: 100%;
-        display: block;
-        clear: both;
-    }
-    .menu {
-        width: 33.33%;
-        /* float: none; */
-    }
-    p {
-        font-size: 12px;
-    }
-    .contentPic {
-        float: none;
-        margin: auto;
-        display: block;
-    }
-    .imageBtn {
-        float: none;
-        width: 220px;
-        height: 220px;
-        margin: 20px auto;
-    }
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    clear: both;
+  }
+  .hcontent {
+    width: 100%;
+    overflow: auto;
+  }
+  .myName {
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .menu {
+    width: 33.33%;
+    /* float: none; */
+  }
+  p {
+    font-size: 12px;
+  }
+  .contentPic {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+  .imageBtn {
+    float: none;
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+  }
 }
 
 @media screen and (min-width: 450px) and (max-width: 750px) {
-    .container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-        clear: both;
-    }
-    .hcontent {
-        width: 100%;
-        overflow: auto;
-    }
-    .myName {
-        width: 100%;
-        display: block;
-        clear: both;
-    }
-    .menu {
-        width: 33.33%;
-    }
-    .imageBtn {
-        float: none;
-        width: 278px;
-        height: 278px;
-        margin: 20px auto;
-    }
-    
-    }
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    clear: both;
+  }
+  .hcontent {
+    width: 100%;
+    overflow: auto;
+  }
+  .myName {
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .menu {
+    width: 33.33%;
+  }
+  .imageBtn {
+    float: none;
+    width: 278px;
+    height: 278px;
+    margin: 20px auto;
+  }
+}
 
 /* Style changes for large screen / desktops */
 @media screen and (min-width: 750px) and (max-width: 1024px) {
-    .container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-        clear: both;
-    }
-    .hcontent {
-        width: 100%;
-        overflow: auto;
-    }
-    .gallery {
-        width: 600px;
-        margin: auto;
-    }
-
-
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    clear: both;
+  }
+  .hcontent {
+    width: 100%;
+    overflow: auto;
+  }
+  .gallery {
+    width: 600px;
+    margin: auto;
+  }
 }
-
-
